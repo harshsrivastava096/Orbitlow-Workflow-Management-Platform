@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: #312834; 
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.background-circle {
+  position: fixed;
+  border-radius: 50%;
+  border: 80px solid rgba(255, 255, 255, 0.05); /* Reduce border thickness */
+  background: transparent;
+  z-index: 0; /* Ensure circles stay behind content */
+  pointer-events: none; /* Prevent circles from intercepting clicks */
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  background-color: #312834;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+/* Ensure content stays above circles */
+.App {
+  position: relative;
+  z-index: 1;
+}
+
+/* Swiper custom styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  background: rgba(0, 0, 0, 0.5);
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 50%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 16px !important;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #D4AF37 !important;
+}
+
+/* Hide navigation on mobile */
+@media (max-width: 640px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
+
+/* Navbar should always be on top */
+header, 
+.navbar {
+  position: relative;
+  z-index: 1000 !important; /* Ensure navbar stays on top */
+}
+
+.file-section button{
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+
+
+.carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+button{
+  cursor: pointer;
+}
+.file-section button{
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
