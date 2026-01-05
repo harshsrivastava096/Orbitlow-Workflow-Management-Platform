@@ -55,5 +55,9 @@ ORBITLAW is designed for **efficiency, collaboration, and productivity**. Whethe
 
 ---
 
-## 📫 Contact
+## 📬 Contact
+
+For support or feedback, contact:  
+✉ harshsrivastava09682@gmail.com
+
 
